@@ -69,7 +69,7 @@ class LinkedList {
         순회용현재노드 = 순회용현재노드.next;
 
         let s = '';
-        for(let i=0; i < this.데이터수; i++) {
+        for(let i=0; i < this.데이터수; i++ ) {
             s += `${순회용현재노드.data}, `;
             순회용현재노드 = 순회용현재노드.next;
         }
@@ -81,7 +81,6 @@ class LinkedList {
         순회용현재노드 = 순회용현재노드.next;
 
         for(let i = 0; i < index - 1; i++) {
-            console.log("insert:", 순회용현재노드.next);
             순회용현재노드 = 순회용현재노드.next;
         }
 
@@ -99,6 +98,6 @@ l.append(3);
 l.append(10);
 l.append(20);
 l.append(30);
-l.insert(2, 1000)
+l.insert(2, 1000);
 console.log(l.length());
 console.log(l.toString());
