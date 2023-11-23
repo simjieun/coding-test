@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>문자거리</title>
+</head>
+<body>
+<script>
+    function solution(str, t) {
+        let answer = '';
+        for(let x of str) {
+            if(!isNaN(x)) answer+=x;
+        }
+
+        return parseInt(answer);
+    }
+
+    let str="g0e00n2T0s8eSoft";
+    console.log(solution(str))
+</script>
+</body>
+</html>
